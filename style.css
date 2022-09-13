@@ -21,12 +21,12 @@
 
 @media (min-width: 992px) {
     .body{
-    background-color: #d07b7b;
+    background-color: #d07bb7;
     }
 }
 
 @media (min-width: 1200px) {
     .body{
-    background-color: #7bd086;
+    background-color: #d09d7b;
     }
 }
