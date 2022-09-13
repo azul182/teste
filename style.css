@@ -1,0 +1,32 @@
+/* Smartphone Portrait */
+
+.body{
+    /*background: linear-gradient(to left, #ae85ca, #7bd0c1);*/
+    background-color: #6b90d3;
+}
+
+/*Smarphone landscape */
+@media (min-width: 576px) {
+    .body{
+    background-color: #ae85ca;
+    }
+}
+
+@media (min-width: 768px) {
+    .body{
+    background-color: #7bd0c1;
+    color: #ffffff;
+    }
+}
+
+@media (min-width: 992px) {
+    .body{
+    background-color: #d07b7b;
+    }
+}
+
+@media (min-width: 1200px) {
+    .body{
+    background-color: #7bd086;
+    }
+}
