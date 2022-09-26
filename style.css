@@ -1,32 +1,122 @@
+/**
+ * Folha de estilo customizada do site...
+ * @author Seu Nome
+ */
+
+/* Layout */
+.flexFooter {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 /* Smartphone Portrait */
 
-.body{
-    /*background: linear-gradient(to left, #ae85ca, #7bd0c1);*/
-    background-color: #6b90d3;
+/*
+body {
+    background-color: #00ffff;
+}
+*/
+
+/** Background video **/
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-/*Smarphone landscape */
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/** End Background video */
+/* Rodapé */
+footer {
+  padding: 50px 0px;
+  background-color: #343538;
+  color: #fff;
+  text-align: center;
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+/* Smartphone Landscape */
 @media (min-width: 576px) {
-    .body{
-    background-color: #ae85ca;
+  /*
+    body {
+        background-color: #ffff00;
     }
+    */
+
+  /* Rodapé */
+  .flexFooter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
 }
 
+/* Tablet Portrait */
 @media (min-width: 768px) {
-    .body{
-    background-color: #7bd0c1;
-    color: #ffffff;
+  /*
+    body {
+        background-color: #ff00c8;
+        color: #ffffff;
     }
+    */
 }
 
+/* Tablet Landscape */
 @media (min-width: 992px) {
-    .body{
-    background-color: #d07bb7;
+  /*
+    body {
+        background-color: #484955;        
     }
+    */
 }
 
+/* Notebooks/PCs/SmartTV */
 @media (min-width: 1200px) {
-    .body{
-    background-color: #d09d7b;
+  /*
+    body {
+        background-color: #fff; 
+        color: #000;       
     }
+    */
 }
